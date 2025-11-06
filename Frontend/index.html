@@ -1,0 +1,28 @@
+<!-- frontend/index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>OCR → Facture (Test)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Mini Chatbot OCR → Facture</h1>
+
+    <div id="chat">
+      <div class="bot-message">Bonjour ! Envoie une image (photo / screenshot) pour générer une facture.</div>
+    </div>
+
+    <div class="controls">
+      <input id="fileInput" type="file" accept="image/*" />
+      <button id="uploadBtn">Envoyer</button>
+    </div>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

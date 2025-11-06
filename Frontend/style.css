@@ -1,0 +1,83 @@
+/* frontend/style.css */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 480px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 8px 24px rgba(35, 47, 76, 0.08);
+}
+
+h1 {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+  text-align: center;
+}
+
+#chat {
+  border: 1px solid #eef2f7;
+  height: 220px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fbfdff;
+  margin-bottom: 12px;
+}
+
+.bot-message, .user-message {
+  padding: 8px 10px;
+  margin: 6px 0;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.bot-message {
+  background: #eef6ff;
+  align-self: flex-start;
+}
+
+.user-message {
+  background: #e6ffe9;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  flex: 1;
+}
+
+button {
+  background: #2b6ef6;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.result {
+  font-size: 14px;
+  color: #333;
+}
